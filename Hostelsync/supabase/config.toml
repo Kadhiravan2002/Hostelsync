@@ -1,0 +1,4 @@
+project_id = "sorpnybcnxbjaawqeacm"
+
+[functions.bootstrap-admin]
+verify_jwt = false
