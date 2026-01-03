@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
+# HOSTELSYNC  
+### Smart Hostel Outing Pass & Management System
 
-## Project info
+## Project Information
 
-**URL**: https://lovable.dev/projects/5e5bf313-1010-4a48-8cc4-443f5ed28167
+**Live URL**: https://hostelsync.me/
 
-## How can I edit this code?
+HOSTELSYNC is a web-based hostel management system developed as a **Final Year B.Tech Information Technology project**.  
+The system digitizes hostel outing pass requests, approvals, tracking, and administration, replacing manual and paper-based processes with a secure and efficient digital workflow.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Abstract
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5e5bf313-1010-4a48-8cc4-443f5ed28167) and start prompting.
+Managing hostel outing permissions manually is time-consuming, error-prone, and difficult to track. HOSTELSYNC provides a centralized digital platform where students can request outing passes, wardens can approve or reject requests, and administrators can monitor hostel activity in real time. The system improves transparency, accountability, and operational efficiency.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Problem Statement
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Traditional hostel outing management relies on manual registers and physical passes, which leads to:
+- Data loss and duplication  
+- Unauthorized outings  
+- Delayed approvals  
+- Lack of real-time monitoring  
+- Difficulty in maintaining historical records  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+HOSTELSYNC addresses these issues by providing a secure, digital, and scalable hostel management solution.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Objectives
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Digitize hostel outing pass management  
+- Reduce manual workload for hostel staff  
+- Improve security and tracking of student movements  
+- Provide real-time status updates  
+- Maintain permanent digital records  
+- Ensure ease of use for students and administrators  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Scope of the Project
 
-**Edit a file directly in GitHub**
+- Student outing request submission  
+- Warden/admin approval workflow  
+- Status tracking and history logs  
+- Responsive access via mobile and desktop  
+- Scalable architecture for future enhancements  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## System Architecture (High Level)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Frontend**: React + TypeScript  
+- **UI Layer**: Tailwind CSS + shadcn/ui  
+- **Build Tool**: Vite  
+- **Hosting**: Cloud-based static hosting  
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Technologies Used
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **React** – Component-based UI framework  
+- **TypeScript** – Type-safe development  
+- **Vite** – Fast development and build tool  
+- **Tailwind CSS** – Utility-first styling  
+- **shadcn/ui** – Reusable UI components  
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/5e5bf313-1010-4a48-8cc4-443f5ed28167) and click on Share -> Publish.
+## Functional Requirements
 
-## Can I connect a custom domain to my Lovable project?
+- Student login and outing request submission  
+- Admin/Warden approval or rejection  
+- View request status in real time  
+- Maintain request history  
+- Responsive UI for all devices  
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Non-Functional Requirements
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- High performance and fast loading  
+- Secure data handling  
+- Scalability for future modules  
+- Maintainable and modular codebase  
+- User-friendly interface  
+
+---
+
+## Project Structure
+
+```text
+src/
+│── components/     # Reusable UI components
+│── pages/          # Application pages
+│── hooks/          # Custom hooks
+│── lib/            # Utilities and helpers
+│── styles/         # Global styles
+│── App.tsx         # Root component
+│── main.tsx        # Entry point
