@@ -1,0 +1,1 @@
+INSERT INTO public.departments (name, code) VALUES ('Chemical Engineering', 'CHE')
